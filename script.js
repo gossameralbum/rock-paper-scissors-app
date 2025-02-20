@@ -22,7 +22,7 @@ function playRound(userChoice) {
 	const computerChoice = computerPlay();
 	let result;
 	if (userChoice === computerChoice) {
-		result = "It's a tie!";
+		result = "it's a tie!";
 		resultMessage.textContent = result;
 	} else if (
 		(userChoice === "rock" && computerChoice === "scissors") ||
@@ -31,12 +31,12 @@ function playRound(userChoice) {
 	) {
 		userScoreCount++;
 		userScore.textContent = userScoreCount;
-		result = "You Win!";
+		result = "you won!";
 		resultMessage.textContent = result;
 	} else {
 		computerScoreCount++;
 		computerScore.textContent = computerScoreCount;
-		result = "You Lose!";
+		result = "you lost!";
 		resultMessage.textContent = result;
 	}
 	return result;
